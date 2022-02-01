@@ -29,7 +29,7 @@ async def start(event):
                    
 		      [Button.url('Meni Gruba Ekle ➕', 'https://t.me/tagxaosbot?startgroup=a')],
                       [Button.url('Fban kanal❌', 'https://t.me/X_fedd')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/XXaosresmi')],
+                      [Button.url('Support📣', 'https://t.me/xaos_support')],
 		      [Button.url('Developer👨🏻‍💻', 'https://t.me/mr_kabus_13')],
                     ),
                     link_preview=False
