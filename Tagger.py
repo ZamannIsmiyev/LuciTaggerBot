@@ -24,25 +24,25 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀LuciTaggerBot**\n ile Grubunuzdakı Nerdeyse Tüm Üyelere Etiket Ata bilirim \nKomutlar için =======> /help yazın**",
+  await event.reply("**🌀TagXaosbot**\n ile Grupunuzdaki userleri fərqli formalarda tağ edə bilərsiz \nKamandalar üçün =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support🛠', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal📣', 'https://t.me/LuciBots')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/LuciMarka')],
+		      [Button.url('Meni Gruba Ekle ➕', 'https://t.me/tagxaosbot?startgroup=a')],
+                      [Button.url('Fban kanal❌', 'https://t.me/X_fedd')],
+                      [Button.url('Resmi Kanal📣', 'https://t.me/XXaosresmi')],
+		      [Button.url('Developer👨🏻‍💻', 'https://t.me/mr_kabus_13')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 LuciTaggerBot Komutları**\n\n**/tag <sebeb> - 5-li Etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiketler**\n\n**/tektag sebeb - Üyeleri Tek Tek Etiketler**\n\n**/admins sebeb - Yöneticileri Tek Tek Tag Eder**\n\n**/start - botu başlatır**"
+  helptext = "**🌀 TagXaosbot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
-                      [Button.url('Support👨‍💻', 'https://t.me/LuciSup')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/LuciBots')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/LuciMarka')],
+                      [Button.url('Meni Gruba Ekle➕', 'https://t.me/tagxaosbot?startgroup=a')],
+                      [Button.url('Fban ❌kanal', 'https://t.me/x_fedd')],
+                      [Button.url('Resmi Kanal🔖', 'https://t.me/xxaosresmi')],
+		      [Button.url('Developer🧑‍🔧', 'https://t.me/mr_kabus_13')],
                     ),
                     link_preview=False
                    )
