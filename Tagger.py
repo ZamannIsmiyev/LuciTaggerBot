@@ -49,7 +49,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çok özellikleri Etiket Botu Bulmaya Çalışan Grub Sahibleri @LuciTaggerBot Size Göre:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @LuciTaggerBot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
+  helptext = "**Çok funksiyalı tag botu axdaran gruo sahiblerine gore @TagXaosbot:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @TagXaosbot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Botu Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
@@ -119,7 +119,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilər @Mr_KABUS_13**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -167,7 +167,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👥 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilər @Mr_KABUS_13**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -232,7 +232,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**👤 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilər @Mr_KABUS_13**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -250,7 +250,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"👤 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Burda sizin reklamınız ola bilər @Mr_KABUS_13**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -284,5 +284,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> Bot çalıyor merak etme 🚀 @lucimarka bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @Mr_KABUS_13 bilgi alabilirsin <<")
 client.run_until_disconnected()
