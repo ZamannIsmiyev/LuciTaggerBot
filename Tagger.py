@@ -36,7 +36,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 TagXaosbot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır**"
+  helptext = "**🌀 TagXaosbot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır botu dayandırmaq - /cancel**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Meni Gruba Ekle➕', 'https://t.me/tagxaosbot?startgroup=a')],
