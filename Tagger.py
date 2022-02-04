@@ -24,35 +24,35 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**🌀TagXaosbot**\n ile Grupunuzdaki userleri fərqli formalarda tağ edə bilərsiz \nKamandalar üçün =======> /help yazın**",
+  await event.reply("**🍷🍾werab_tag_bot**\n ile Grupunuzdaki userleri fərqli formalarda tağ edə bilərsiz \nKamandalar üçün =======> /help yazın**",
                     buttons=(
                    
-		      [Button.url('Meni Gruba Ekle ➕', 'https://t.me/tagxaosbot?startgroup=a')],
-                      [Button.url('Fban kanal❌', 'https://t.me/X_fedd')],
-                      [Button.url('Support📣', 'https://t.me/xaos_support')],
-		      [Button.url('Developer👨🏻‍💻', 'https://t.me/mr_kabus_13')],
+		      [ Düğme . url ( 'Meni Gruba Ekle ➕' , 'https://t.me/werab_tag_bot?startgroup=a' )],
+                      [ Düğme . url ( 'Sherab Qadin🍷🍾' , 'https://t.me/werabliAnlarr' )],
+                      [ Düğme . url ( 'Werab Qoxulu🍷🍾' , 'https://t.me/werablianlar' )],
+		      [Button.url('Sahibi👨‍🔧', 'https://t.me/ismiyev95')],
                     ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**🌀 TagXaosbot Kamandaları**\n\n**/tag <sebeb> - 5-li tağ Atar**\n\n**/etag <sebeb> - Emoji ile tağ atar**\n\n**/tektag sebeb - Userleri Tek Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatır botu dayandırmaq - /cancel**"
+  helptext  =  "**🍷🍾 werab_tag_bot Kamandaları**\n\n**/tag <sebeb> - 5-li etiket Atar**\n\n**/etag <sebeb> - Emoji ile etiket atar**\n\ n**/tektag sebeb - Userleri Tek tağ atar**\n\n**/admins sebeb - Adminleri Tek Tek Tağ Eder**\n\n**/start - botu başlatmaq botu dayandırmaq - /cancel**"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Meni Gruba Ekle➕', 'https://t.me/tagxaosbot?startgroup=a')],
-                      [Button.url('Fban ❌kanal', 'https://t.me/x_fedd')],
-                      [Button.url('Resmi Kanal🔖', 'https://t.me/xxaosresmi')],
-		      [Button.url('Developer🧑‍🔧', 'https://t.me/mr_kabus_13')],
+                      [Button.url('Meni Gruba Ekle➕', 'https://t.me/werab_tag_bot?startgroup=a')],
+                      [Button.url('Werab Qoxulu 🍷🍾', 'https://t.me/x_fedd')],
+                      [ Düğme . url ( 'Sherab Qadin' , 'https://t.me/werablianlar' )],
+		      [ Düğme . url ( 'Sahibi🧑‍🔧' , 'https://t.me/ismiyev95' )],
                     ),
                     link_preview=False
                    )
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çok funksiyalı tag botu axdaran gruo sahiblerine gore @TagXaosbot:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @TagXaosbot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
+  helptext = "**Çok funksiyalı tag botu axdaran gruo sahiblerine gore @werab_tag_bot:\n\n📌 5-li etiket\n📌 Emoji etiket\n📌 Tekli Etiket\n📌 Yalnız Yöneticileri etiketleme\n📌\n\n Böyle Çok özellikli @TagXaosbot 'u grubunuza yönetici olarak ekleyip rahatlıkla üyelir , etiket ata bilirsiz **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Botu Gruba Ekle➕', 'https://t.me/lucitaggerbot?startgroup=a')],
+                      [Button.url('Botu Gruba Ekle➕', 'https://t.me/werab_tag_bot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -119,7 +119,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in anlik_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilər @Mr_KABUS_13**❌")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilər @ismiyev95**❌")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -284,5 +284,5 @@ async def mentionall(tagadmin):
 		sleep(0.5)
 
 
-print(">> Bot çalıyor merak etme 🚀 @Mr_KABUS_13 bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @ismiyev95 bilgi alabilirsin <<")
 client.run_until_disconnected()
